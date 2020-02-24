@@ -1,0 +1,8 @@
+{
+  "name": "@d4rek/babel-svgr-plugins-common",
+  "version": "1.0.0",
+  "description": "Babel plugins for SVGR",
+  "main": "index.js",
+  "author": "Derek Nguyen <derek@penandpillow.com>",
+  "license": "MIT"
+}
