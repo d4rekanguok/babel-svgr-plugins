@@ -1,37 +1,5 @@
-const { getAttributeValue } = require('./utils/getAttributeValue')
-
-/**
- * transform...
- * [{
- *   replace: '#123',
- *   with: '#000',
- *   when: {
- *     attributeName: 'strokeWidth',
- *     tagName: 'circle',
- *   }
- * }]
- * 
- * to:
- * [{
- *   tagName: 'circle',
- *   attributeName: 'strokeWidth',
- *   value: '#123',
- *   newValue: '#000',
- * }]
- */
-function normalizeValueOptions(values) {
-  return values.map(value => {
-    const when = value.when || {}
-    return {
-      tagName: 'any',
-      attributeName: 'any',
-      ...when,
-  
-      value: value.replace,
-      newValue: value.with,
-    }
-  })
-}
+import { getAttributeValue } from '@d4rek/babel-svgr-plugins-common'
+import { normalizeValueOptions } from './normalize-value-options'
 
 function stripBrace(str) {
   return str.substring(1, str.length -1)
@@ -69,7 +37,7 @@ const buildAttribute = ({ t, template }) => (value) => {
   return null
 }
 
-module.exports = function replaceJsxAttributeValues(
+export default function replaceJsxAttributeValues(
   { types: t, template },
   { values }
 ) {

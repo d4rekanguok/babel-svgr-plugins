@@ -1,20 +1,7 @@
-const { getAttributeValue } = require('./utils/getAttributeValue')
+import { getAttributeValue } from '@d4rek/babel-svgr-plugins-common'
+import { normalizeValueOptions } from './normalize-value-options'
 
-function normalizeValueOptions(elements) {
-  return elements.map(element => {
-    const { conditions = {}, propName } = element
-    const { tagName = 'any', ...rest } = conditions
-    return {
-      propName,
-      tagName,
-      attributes: {
-        ...rest,
-      }
-    }
-  })
-}
-
-module.exports = function optionalJsxElements(
+export default function optionalJsxElements(
   { types: t, template },
   { elements: _elements }
 ) {
@@ -66,5 +53,3 @@ module.exports = function optionalJsxElements(
     }
   }
 }
-
-module.exports.normalizeValueOptions = normalizeValueOptions

@@ -1,5 +1,1 @@
-const { getAttributeValue } = require('./get-attribute-value')
-
-module.exports = {
-  getAttributeValue,
-}
+export { getAttributeValue } from './get-attribute-value'

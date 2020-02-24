@@ -1,4 +1,4 @@
-module.exports = function (valueNode) {
+export function getAttributeValue (valueNode) {
   if (valueNode.type === 'StringLiteral') {
     return valueNode.value
   }
