@@ -2,7 +2,7 @@
   "name": "@d4rek/replace-jsx-attribute-value",
   "version": "1.0.0",
   "description": "Babel plugins for SVGR | Replace jsx attribute value",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Derek Nguyen <derek@penandpillow.com>",
   "license": "MIT",
   "repository": {
