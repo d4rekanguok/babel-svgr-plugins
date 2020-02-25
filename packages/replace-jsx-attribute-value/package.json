@@ -21,5 +21,8 @@
     "prepublishOnly": "rollup -c",
     "build": "rollup -c"
   },
-  "gitHead": "98c0757bffdb3721e3878724d7b29b6e4af6121a"
+  "gitHead": "98c0757bffdb3721e3878724d7b29b6e4af6121a",
+  "publishConfig": {
+    "access": "public"
+  }
 }
