@@ -1,6 +1,6 @@
 {
   "name": "babel-svgr-plugins",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Babel plugins for SVGR",
   "author": "Derek Nguyen <derek@penandpillow.com>",
   "license": "MIT",
@@ -24,9 +24,7 @@
     "test": "tap"
   },
   "dependencies": {
-    "@rollup/plugin-node-resolve": "^7.1.1",
     "lerna": "^3.20.2",
-    "rollup": "^1.31.1",
     "tap": "^14.10.6"
   }
 }
