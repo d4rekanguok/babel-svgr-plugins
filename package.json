@@ -18,6 +18,8 @@
     "url": "https://github.com/d4rekanguok/babel-svgr-plugins/issues"
   },
   "scripts": {
+    "build": "lerna --scope @d4rek/* run build",
+    "storybook": "yarn workspace playground storybook",
     "bootstrap": "lerna bootstrap --use-workspaces",
     "test": "tap"
   },

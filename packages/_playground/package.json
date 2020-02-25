@@ -1,12 +1,12 @@
 {
   "name": "playground",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "@d4rek/optional-jsx-elements": "^1.0.0",
-    "@d4rek/replace-jsx-attribute-value": "^1.0.0",
+    "@d4rek/optional-jsx-elements": "^1.0.1",
+    "@d4rek/replace-jsx-attribute-value": "^1.0.1",
     "@storybook/addon-knobs": "^5.3.13",
     "@svgr/cli": "^5.2.0",
     "lodash": "^4.17.15",
