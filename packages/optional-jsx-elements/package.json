@@ -1,6 +1,6 @@
 {
   "name": "@d4rek/optional-jsx-elements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel plugins for SVGR | Make JSX elements optional",
   "main": "dist/index.js",
   "author": "Derek Nguyen <derek@penandpillow.com>",
